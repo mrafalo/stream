@@ -2,3 +2,4 @@
 
 Apache spark streaming performance monitoring & prediction
 
+Spark properties:
