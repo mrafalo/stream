@@ -1,0 +1,11 @@
+global:
+  topic: spark_test
+  delay_sec: 1
+  data_file: /root/data/ghtorrent_2019_01_07_chunk_2.csv
+  bootstrap_server: xxx.xxx.xxx.xxx:xxxx
+  record_cnt: 10
+
+producer:
+  batch_size: 16000
+  linger_ms: 0
+  
