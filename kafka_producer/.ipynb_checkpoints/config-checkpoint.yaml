@@ -1,11 +1,12 @@
 global:
-  topic: spark_test
-  delay_sec: 1
-  data_file: /root/data/ghtorrent_2019_01_07_chunk_2.csv
-  bootstrap_server: xxx.xxx.xxx.xxx:xxxx
-  record_cnt: 10
+  topic: spark_test #Name of kafka topic 
+  delay_sec: 0 #Time in seconds between events
+  data_file: /root/data/ghtorrent_2019_01_07_chunk_2.csv #Data file
+  bootstrap_server: 1.2.3.4:333 #Kafka server address
+  record_cnt: 10000 #Event count, after which producer stops. Set to -1 for infinite run. 
+  running: 1 #Flag for sending events to kafka. 1 - sending data, 0 - not sending data 
 
 producer:
-  batch_size: 16000
-  linger_ms: 0
+  batch_size: 16000 #Kafka parameter batch_size
+  linger_ms: 0 #Kafka parameter linger_ms
   
